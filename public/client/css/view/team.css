@@ -1,0 +1,215 @@
+.Teams{
+    height: 23rem;
+    width: 15rem;
+    background: linear-gradient(#173d79,#6dc0a4);
+    background-size: cover;
+    position: relative;
+    overflow: hidden; 
+    border-radius: 20px;
+    margin-bottom: 2%;
+   
+  }
+  .img1-blog{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    clip-path: polygon(0 0, 23% 0, 23% 100%, 0% 100%);
+    transition: .5s;
+    transition-delay: .1s;
+    
+  }
+  .img2-blog{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    clip-path: polygon(47% 0, 21% 0, 21% 100%, 47% 100%);
+    transition: .5s;
+    transition-delay: .2s;
+    
+  }
+  .img3-blog{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    clip-path: polygon(46% 0, 74% 0, 74% 100%, 45% 100%);
+    transition: .5s;
+    transition-delay: .3s;
+    
+  }
+  .img4-blog{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    clip-path: polygon(100% 0, 72% 0, 72% 100%, 100% 100%);
+    transition: .5s;
+    transition-delay: .4s;
+  }
+  
+  .Teams:hover .content-team-span img{
+    transform: translateY(-100%);
+  }
+  .Teams:hover{
+    transform: rotatex(0deg) rotateY(0deg) rotateZ(0deg) !important; 
+    border-radius: 2rem;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.774)
+  }
+  
+  .content-team-text{
+    padding: 6% 5%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+  }
+  .content-team-text p{
+    font-size: 16Px;
+    color:white;
+  }
+  .content-team-text h1{
+    color: white;
+    margin-bottom: 2%;
+  }
+  .Teams-container{
+    padding-top: 5%;
+    height: 80%;
+    position: relative;
+    z-index: 2;
+  }
+  .slider{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .project-link{
+    text-decoration: none;
+    font-size: 18px;
+   margin-left: 20%;
+   margin-right: 20%;
+   padding: 4% 0;
+    background: var(--blue);
+  }
+  .team-shape{
+    position: absolute;
+    bottom: -100px;
+    right: -100px;
+    width: 70%;
+    height: 100%;
+  }
+  .team-shape2{
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+  }
+  
+  .team-h1{
+    color: white;
+    padding: 2% 0 0 0;
+    font-size: 40px;
+    position: relative;
+    z-index: 3;
+  }
+
+  /******* animations  *******/
+  .blog-animate{
+    width: 3rem;
+    height: 3rem;
+    background: var(--orange);
+    border-radius: 50%;
+    position: absolute;
+    left: 22%;
+    top: 0;
+    opacity: .6;
+    animation: rond 10s linear infinite;
+  }
+  @keyframes rond {
+      0%{
+        top: 0; 
+        
+        transform: translateX(0);
+      }
+      10%{
+        top: 5%;
+        transform: translateX(-30px);
+      }
+      20%{
+        top: 10%;
+        transform: translateX(-60px);
+      }
+      30%{
+        top: 15%;
+        transform: translateX(-70px);
+      }
+      40%{
+        top: 20%;
+        transform: translateX(-150px);
+      }
+      43%{
+        top: 25%;
+        transform: translateX(-200px);
+      }
+      45%{
+        top: 30%;
+        transform: translateX(-240px);
+      }
+      55%{
+        top: 35%;
+        transform: translateX(-260px);
+      }
+      60%{
+        top: 40%;
+        transform: translateX(-260px);
+      }
+      68%{
+        top: 50%;
+        transform: translateX(-260px);
+      }
+      75%{
+        top: 55%;
+        transform: translateX(-290px);
+      }
+      82%{
+        top: 60%;
+        transform: translateX(-300px);
+      }
+      90%{
+        top: 65%;
+        transform: translateX(-380px);
+      }
+      100%{
+        top: 70%;
+        transform: translateX(-400px);
+      }
+  }
+  .team-animated-shape,.team-animated-shape2{
+    position: absolute;
+    opacity: .6;
+    animation: rotate_shapes 6s linear infinite;
+    
+  }
+  .team-animated-shape{
+    right: 20%;
+    top: 5%;
+    animation-delay: .4s;
+  }
+  .team-animated-shape2{
+    left: 20%;
+    bottom: 5%;
+    animation-delay: .1s;
+  }
+  @keyframes rotate_shapes {
+    0%{
+        transform: rotate(0);
+    }
+    
+    100%{
+        transform: rotate(360deg);
+    }
+  }

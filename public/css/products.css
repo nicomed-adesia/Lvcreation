@@ -1,0 +1,120 @@
+
+:root{
+    --dark: #222224;
+    --blue:#173d79;
+    --orange:#f8ad33;
+    --ciel:#6dc0a4;
+    --white:#fff;
+    --box-shadow:0 0 .6rem rgba(0, 0, 0, .2)
+}
+.products{
+    width: 100%;
+    height: 200vh;
+    background: #222224;
+    color: white ;
+}
+.products-titles{
+    display: flex;
+    border: 1px solid black;
+}
+
+.content-products-titles h1{
+  font-size: 25px;
+  margin-top: 10px;
+  text-align: left;
+  
+
+}
+.content-products-titles:nth-child(1) h1{
+    margin-left: 10px;
+}
+.products-container{
+    padding:20px 0 0 20Px;
+    /* background: red; */
+    height: 100%;
+}
+.products-container h1{
+    margin-bottom: 20px;
+}
+
+.content-products-contenu{
+    /* border: 1px solid black; */
+    height: 6rem;
+    padding: 5px 0 5px 8px ;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+
+.products-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+
+}
+.products-content-pagination{
+    padding: 10px 0;
+    
+}
+
+.modification{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.modification i{
+    padding: 10px;
+    background: #173d79;
+}
+
+.input-products{
+    width: 3rem;   
+}
+.input-procet{
+    margin-top: 20px;
+}
+.input-procet input{
+    background: linear-gradient(to right,var(--blue),var(--ciel));
+    padding: 1% 2%;
+    border: none;
+    color: var(--white);
+    border-radius: 50Px;
+    font-weight: bold;
+}
+
+
+@media (max-width:770px) {
+    .content-products-titles{
+
+        width: 100% !important;
+    
+    }
+    .content-products-titles H1{
+        font-size: 20Px !important;
+    }
+    .content-products-contenu{
+        width: 100% !important;
+    }
+}
+@media (max-width:1000px) {
+
+    .content-products-titles H1{
+        font-size: 25Px !important;
+    }
+}
+
+.titre-achat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-precedent{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #fff;
+    margin-right: 20px;
+    padding-bottom: 15px;
+}

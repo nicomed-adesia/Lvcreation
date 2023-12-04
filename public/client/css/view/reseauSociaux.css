@@ -1,0 +1,141 @@
+.reseau-sociaux{
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    z-index:22222 ;
+ 
+  
+  }
+  .btn-circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 5;
+    display: block;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid white;
+    background: white;
+  }
+  .text-logo{
+    position: absolute;
+    bottom: -40px;
+    right: 30px;
+    color: white;
+    z-index:22 ;
+  }
+  .btn-circle img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .line{
+    width: 50%;
+    height: 3px;
+    background: #fff;
+    transition: transform .2s ease, opacity .2s ease, top .2s ease;
+    position: relative;
+  }
+  .line:nth-child(1){
+    top: -10px;
+  }
+  .line:nth-child(3){
+    top: 10px;
+  }
+  .btn-circle.menuAnime .line:nth-child(1){
+    top: 3px;
+    transform: rotate(45deg);
+    transition: top .2s ease, transform .2s ease;
+  }
+  .btn-circle.menuAnime .line:nth-child(2){
+    transition: opacity .2s ease;
+    opacity: 0;
+  }
+  .btn-circle.menuAnime .line:nth-child(3){
+    top: -3px;
+    transform: rotate(-45deg);
+    transition: top .2s ease, transform .2s ease;
+  }
+  .circle-menu{
+    background: transparent;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform .4s ease .5s;
+  }
+  .circle-menu.circleAnime{
+    background: transparent;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform .4s ease .5s;
+  }
+  .links-circle{
+    width: 60px;
+    height: 60px;
+    background: var(--ciel);
+    border-radius: 50%;
+    position: absolute;
+    opacity: .7;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+  .links-circle:hover{
+      opacity:1;
+  }
+  .links-circle i{
+      font-size: 35px;
+      color: white;
+  }
+  .links-circle:nth-child(1){
+    left: 0;
+    transition: transform .2s ease .4s;
+  }
+  .links-circle:nth-child(2){
+    left: 15%;
+    top: 15%;
+    transition: transform .2s ease .2s;
+  }
+  .links-circle:nth-child(3){
+    top: 0;
+    transition: transform .2s ease 0s;
+  }
+  .circle-menu.circleAnime .links-circle:nth-child(1){
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform .2s ease .7s;
+  }
+  .circle-menu.circleAnime .links-circle:nth-child(2){
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform .2s ease 1s;
+  }
+  .circle-menu.circleAnime .links-circle:nth-child(3){
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform .2s ease 1.3s;
+  }
+  .wifi{
+      color: white;
+      font-size: 30px;
+  }

@@ -1,0 +1,184 @@
+:root{
+    --dark: #222224;
+    --blue:#173d79;
+    --orange:#f8ad33;
+    --ciel:#6dc0a4;
+    --white:#fff;
+    --box-shadow:0 0 .6rem rgba(0, 0, 0, .2)
+}
+
+.payement {
+    width: 100%;
+    height: auto;
+    background: var(--dark);
+    position: relative;
+   
+}
+
+.content-payement {
+    /* border: 2px solid black; */
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 0;
+}
+
+.payement-front{
+    width: 100%;
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@keyframes Fancy {
+    0%{
+        border-radius: 76% 24% 59% 41% / 50% 52% 48% 50%;
+    }
+    33.33%{
+        border-radius: 61% 39% 52% 48% / 56% 42% 58% 44%;
+    }
+    66.66%{
+        border-radius: 49% 51% 47% 53% / 60% 31% 69% 40% ;
+    }
+    100%{
+        border-radius: 76% 24% 59% 41% / 50% 52% 48% 50%;
+    }
+}
+
+.payement-front h1 {
+    color: var(--dark);
+    font-size: 30px;
+}
+
+.payement-front p {
+    color: white;
+}
+
+.payement-front input {
+    margin: 5px;
+    width:50%;
+    height: 2.5rem;
+    border: none;
+    border-bottom: 2px solid var(--dark) !important;
+    outline: none;
+    background: none;
+    transition: .5s;
+}
+
+.payement-front input:focus {
+    border-bottom: 2px solid var(--ciel) !important;
+
+}
+.payement-front input:valid {
+    border-bottom: 2px solid var(--ciel) !important;
+
+}
+
+.payement-front input:focus::placeholder{
+    color: var(--blue);
+}
+
+.mode-payement {
+    height: 2.5rem;
+    width: 10rem;
+    overflow: hidden;
+    background: #173d79;
+    display: flex;
+    flex-direction: column;
+    padding: 1% 0;
+    transition: .8s;
+
+}
+
+.mode-payement a{
+    text-decoration: none;
+    color: white;
+    margin-top: 3%;
+}
+
+.mode-payement.midina {
+    height: 10rem;
+
+}
+
+
+.payement-design {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    height: 15rem;  
+}
+
+.payement-design2 {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 15rem;  
+}
+
+/* animation */
+.payement-design-div{
+    height: 5rem;
+    width: 5rem;
+    background: #f8ad33;
+    opacity: .8;
+    position: absolute;
+    bottom: 0;
+    border-radius: 50%;
+    animation: bouly 15s linear infinite;
+}
+
+@keyframes bouly {
+    0%{
+        bottom: -10rem;
+        left: 0;
+    }
+    15%{
+        bottom:15%;
+        left: 20%;
+    }
+    25%{
+        bottom:25%;
+        left: 30%;
+    }
+    35%{
+        bottom:30%;
+        left: 40%;
+    }
+    45%{
+        bottom:25%;
+        left: 50%;
+    }
+    55%{
+        bottom:20%;
+        left: 55%;
+    }
+    65%{
+        bottom:15%;
+        left: 60%;
+    }
+    75%{
+        bottom:10%;
+        left: 70%;
+    }
+    85%{
+        bottom:20%;
+        left: 80%;
+    }
+    95%{
+        bottom:10%;
+        left: 90%;
+    }
+    100%{
+        bottom:0%;
+        left: 100%;
+    }
+}

@@ -1,0 +1,181 @@
+.panier{
+    width: 100%;
+    height: 100% !important;
+    background: #222224;
+}
+
+  .content-panier{
+    height: 100%;
+    width: 100%;
+}
+
+  @media (max-width:766px) {
+    .validation-formulaire-content{
+        display:block;
+    }
+}
+
+.flip-card{
+  height: 360px;
+  width: 300px;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  margin: 2rem 0;
+}
+.flip-card .card{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #6dc0a4;
+  border-radius: 10Px;
+  transform: translateY(0deg);
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  padding: 5px ;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.685);
+  transition: transform 0.7s cubic-bezier(0.4,0.2,0.2,1);
+}
+.flip-card .front-face img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.flip-card:hover .front-face{
+  transform: rotateY(-180deg);
+}
+
+.flip-card .back-face{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transform: rotateY(180deg);
+  text-align: center;
+}
+.flip-card:hover .back-face{
+  transform: rotateY(0deg);
+}
+.image-card{
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  border: 10Px solid white;
+  
+}
+.info{
+  padding:1rem;
+}
+.choix-panier{
+  width: 100%;
+  padding: 1rem;
+}
+.choix-panier i{
+padding:.6rem;
+background: var(--blue);
+color: white;
+font-weight: 900;
+border-radius: 50%;
+font-size: 30px;
+}
+.choix-panier a{
+  text-decoration: none;
+}
+.offres-global{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  position: fixed;
+  height: 90vh;
+  overflow: scroll;
+}
+::-webkit-scrollbar{
+ color: #f8ad33;
+}
+.title-panier{
+  padding: 3rem 0 2rem 0;
+  
+}
+.title-panier h3{
+  font-size: 40px !important;
+}
+@media (max-width:1036px) {
+  .flip-card{
+      height: 300px;
+      width: 250px;
+     
+  }
+  .image-card{
+      height: 6rem;
+      width: 6rem;
+      border-radius: 50%;
+      border: 2Px solid white;
+  }
+  .title-panier{
+      padding: 1rem 0 1rem 0;
+      
+  }
+  .title-panier h3{
+      font-size: 30px !important;
+  }
+}
+@media (max-width:980px) {
+ 
+  .image-card{
+      height: 4rem;
+      width: 4rem;
+      border-radius: 50%;
+      border: 2Px solid white;
+  }
+  .title-panier{
+      padding: .5rem 0 .2rem 0;
+      
+  }
+  .title-panier h3{
+      font-size: 20px !important;
+  }
+
+}
+@media (max-width:700px) {
+  .offres-global {
+      width: 300px !important;
+      display: block;
+      margin-left: 10rem !important;
+  }
+
+}
+
+@media (max-width:550px) {
+  .offres-global {
+      width: 300px !important;
+      display: block;
+      margin-left: 5rem !important;
+  }
+
+}
+@media (max-width:499px) {
+  .offres-global {
+      width: 300px !important;
+      display: block;
+      margin-left: 5rem !important;
+  }
+  .flip-card{
+      height: 300px;
+      width: 250px;
+      
+  }
+
+}
+@media (max-width:420px) {
+  .offres-global {
+      width: 250px !important;
+      display: block;
+      margin-left: 4rem !important;
+  }
+  .flip-card{
+      height: 250px;
+      width: 200px;
+      
+  }
+
+}

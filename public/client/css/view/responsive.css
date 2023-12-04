@@ -1,0 +1,281 @@
+/* *****responsive ecran large**** */
+@media (min-width:1380px) {
+    /* header */
+    .nvbr{
+        width: 7rem;
+    }
+
+    .iconnav{
+        font-size: 50px;
+        margin: 0 1rem 0 1.1rem;
+    }
+    .ttnav{
+        margin-left: 1rem;
+        font-size: 35px !important;
+    }
+    .togglenav{
+        height: 5rem;
+        width: 5rem;
+        margin-right: .5rem;
+    }
+    .togglenav::before{
+        width: 3rem;
+    }
+    .togglenav::after{
+        width: 3rem;
+    }
+    .nvbr.activer{
+        width: 15rem;
+    }
+    .nvbr.activer .iconnav{
+        margin-left: 1rem !important;
+    }
+
+    /* acceuil */
+    .content-slider-un{
+        width: 100%;
+        height: 100%;
+        margin-left: 5rem;
+      }
+      .welcome h1{
+        font-size: 70px;
+        margin-bottom: 2rem;
+    }
+    
+    .welcome p{
+        font-size: 30Px;
+    }
+    
+    .welcome a{
+        font-size: 40px;
+    }
+    /* ***team***** */
+    
+  }
+  
+  @media (min-width:1400px) {
+    .slider{
+        width: 105% !important;
+        height: 100%;
+        /* border: 2px solid white; */
+       
+    
+      }
+    .Teams{
+        height: 25rem;
+        width: 20rem;
+        margin-top: 2rem;
+    }
+
+    .team-h1{
+        font-size: 80px;
+    }
+  }
+  @media (min-width:1600px) {
+    .slider{
+        width: 120% !important;
+        height: 100%;
+
+        margin-left: -5rem !important;
+    
+      }
+    .Teams{
+        height: 25rem;
+        width: 22rem;
+    }
+    .Teams-container{
+        margin-left: -5rem;
+      }
+    .team-h1{
+        font-size: 80px;
+    }
+    /* ******* offres **** */
+    .flip-card{
+        height: 40rem;
+        width: 25rem;
+    }
+    #p3{
+        bottom: 200%;
+    
+      }
+    .btn-circle{
+        height: 88px;
+        width:88px
+    }
+    
+      .reseau-sociaux{
+        bottom: 2.5rem;
+        right: 3rem;
+        z-index:22222 ;
+      }
+      .links-circle{
+        width: 80px;
+        height: 80px;
+      }
+      .links-circle i{
+        font-size: 50px;
+
+    }
+    .links-circle i{
+        font-size: 35px;
+        color: white;
+    }
+    .links-circle:nth-child(1){
+      left: 0;
+      transition: transform .2s ease .4s;
+    }
+    .links-circle:nth-child(2){
+      left: 17%;
+      top: 10%;
+      transition: transform .2s ease .2s;
+    }
+    .links-circle:nth-child(3){
+      top: 0%;
+      left: 60%;
+      transition: transform .2s ease 0s;
+    }
+    .wifi{
+        font-size: 50px;
+        
+    }
+    .btn-circle{
+        margin: 2rem;
+    }
+    #p4{
+        top: 214.2%;
+        z-index: 2;
+    
+      }
+
+      .payement-front{
+        width: 60%;
+        height: 80%;
+      }
+      .payement-front h1{
+        font-weight:bold;
+        font-size: 50px;
+      }
+      .payement-front p{
+        font-size: 40px;
+      }
+      .mode-payement {
+        height: 5rem;
+        width: 25rem;
+       
+    
+    }
+      .mode-payement a{
+        font-size: 40px;
+      }
+      .mode-payement.midina {
+    height: 25rem;
+
+    }
+    .title-blog{
+        font-size: 70px;
+    }
+    .container-global-blog{
+        border:2px solid red;
+    height: 90%;
+
+    }
+    .container-blog .blog-content-image img{
+        height: 22rem;
+        width: 28rem;
+        object-fit: cover; 
+        margin-left: 3rem;
+      }
+      .blog-content-text{
+        margin-left: 5rem !important;
+        width: 60% !important;
+      }
+      .blog-content-text h3{
+        font-size: 50px !important;
+      }
+      .blog-content-text p{
+        font-size: 25px;
+      }
+      .blog-content-text h5{
+        font-size: 40px;
+      }
+      .link-to-project{
+        font-size: 25px;
+      }
+    
+  }
+  @media (max-width:944px) {
+      .header-responsive{
+          display: block !important;
+      }    
+  
+      .head{
+          display: none;
+      }
+  
+      .reseau-sociaux{
+          position: absolute !important;
+          top: 500px !important;
+          right: 40px;
+          transform: rotate(90deg);
+  
+      }
+  
+      .links-circle  i{
+          transform: rotate(-90deg);
+  
+      }
+  
+      .btn-circle i{
+          transform: rotate(-90deg);
+      }
+  
+  }
+
+/* *****responsive ecran large**** */
+
+@media (max-width:952px) {
+    .welcome p{
+        font-size: 16px;
+    }
+    
+    .iconnav{
+        font-size: 25Px;
+    }
+    .a_propos span{
+        padding: 12px 30px;
+    }
+    .bienvenue{
+        display: flex;
+        flex-direction: column !important;
+        padding-top: 1rem !important;
+    }
+    .welcome{
+        width: 100% !important;
+    }
+    .welcome-image{
+        width: 100%;
+        height: 60%;
+    }
+}
+
+@media (max-width:789px){
+    
+    .bienvenue{
+        display: flex;
+        flex-direction: column;
+        padding-top: 1rem !important;
+    }
+    
+    
+}
+@media (max-width:1065px) {
+    .blog{
+        height: 15rem;
+  width: 12rem;
+    }
+    .slider{
+        position: relative;
+        z-index: 999;
+    }
+}
+

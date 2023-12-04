@@ -1,0 +1,147 @@
+.section-blog-LV{
+    width: 100%;
+    height: 100%;
+  
+  }
+
+  .blog-global-content{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: var(--dark);
+    position: relative;
+  
+  }
+  
+  .blog-global-content div h1{
+    padding: 1rem 0;
+    color: var(--white);
+  }
+
+  .blog-global-content .container-global-blog{
+    background: #282928a8;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 0 10px #fff;
+  }
+  
+  .container-blog{
+    display: flex;
+  }
+  
+  .container-blog .blog-content-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ligne{
+    background: #000000;
+    height: 3px;
+  }
+  
+  .container-blog .blog-content-image img{
+    height: 13rem;
+    width: 18rem;
+    object-fit: cover; 
+  }
+  
+  .container-blog .blog-content-text{
+    color: var(--white);
+  }
+  
+  .blog-content-text .link-to-project{
+    text-decoration: none;
+    padding: .5rem 1rem;
+    background: #173d79;
+    color: var(--white);
+    transition: .5s;
+  }
+  
+  .link-to-project:hover
+  {
+    color: var(--blue);
+    background: var(--white);
+  }
+  
+  .pagination-laravel{
+    text-decoration: none;
+    padding: .2rem 1rem;
+    background: #173d79;
+    color: var(--white);
+    
+  }
+  
+  .shape-blog{
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    height: 25rem;
+    width: 25rem;
+  
+  }
+  
+  .shape-blog2{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 50rem;
+    height: 30rem;
+  
+  }
+  
+  @media (max-width:654px) {
+    .shape-blog{
+        height: 20rem;
+        width: 20rem;
+    
+    }
+  
+    .shape-blog2{
+        width: 45rem;
+        height: 30rem;
+    
+    }
+  }
+  
+  @media (max-width:765px) {
+    .container-blog .blog-content-image img{
+        height: 10rem;
+        width: 10rem;
+        
+    }
+  
+    .container-blog .blog-content-text p{
+        font-size: 14px;
+    }
+    
+  }
+  
+  @media (max-width:500px) {
+    .container-blog .blog-content-text p{
+        font-size: 12px;
+    }
+  
+    .container-blog .blog-content-image img{
+        height: 12rem;
+        width: 10rem;
+        
+    }
+  
+    .blog-content-text .link-to-project{
+        text-decoration: none;
+        padding: .2rem .8rem;
+        background: #173d79;
+        color: var(--white);
+    }
+  
+    .container-blog .blog-content-text{
+        padding: 0 1rem;
+      
+    }
+    
+  }

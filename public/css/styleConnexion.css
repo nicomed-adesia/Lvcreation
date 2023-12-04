@@ -1,0 +1,634 @@
+/* style connexion */
+.contenuConnexion{
+    width: 100%;
+    height: 100vh;
+    /* background-image: linear-gradient(rgba(0,0,50,0.8), rgba(0,0,50,0.8)), url('../image/Layer.jpg');
+    background-position: center;
+    background-size: cover; */
+    /* position: relative; */
+}
+@keyframes move {
+    100% {
+        transform: translate3d(0, 0, 1px) rotate(360deg);
+    }
+}
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #3E1E68;
+    overflow: hidden;
+}
+
+.background span {
+    width: 20vmin;
+    height: 20vmin;
+    border-radius: 20vmin;
+    backface-visibility: hidden;
+    position: absolute;
+    animation: move;
+    animation-duration: 45;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+.background span:nth-child(0) {
+    color: #FFACAC;
+    top: 41%;
+    left: 54%;
+    animation-duration: 32s;
+    animation-delay: -47s;
+    transform-origin: 18vw -7vh;
+    box-shadow: 40vmin 0 5.272543404198353vmin currentColor;
+}
+.background span:nth-child(1) {
+    color: #FFACAC;
+    top: 38%;
+    left: 59%;
+    animation-duration: 31s;
+    animation-delay: -39s;
+    transform-origin: 16vw -1vh;
+    box-shadow: -40vmin 0 5.3580493794878965vmin currentColor;
+}
+.background span:nth-child(2) {
+    color: #E45A84;
+    top: 17%;
+    left: 48%;
+    animation-duration: 30s;
+    animation-delay: -39s;
+    transform-origin: 10vw -18vh;
+    box-shadow: -40vmin 0 5.810024411054506vmin currentColor;
+}
+.background span:nth-child(3) {
+    color: #FFACAC;
+    top: 46%;
+    left: 36%;
+    animation-duration: 13s;
+    animation-delay: -13s;
+    transform-origin: -14vw -15vh;
+    box-shadow: 40vmin 0 5.328825752548495vmin currentColor;
+}
+.background span:nth-child(4) {
+    color: #583C87;
+    top: 21%;
+    left: 62%;
+    animation-duration: 34s;
+    animation-delay: -44s;
+    transform-origin: -15vw 2vh;
+    box-shadow: -40vmin 0 5.834145597968812vmin currentColor;
+}
+.background span:nth-child(5) {
+    color: #FFACAC;
+    top: 11%;
+    left: 69%;
+    animation-duration: 22s;
+    animation-delay: -48s;
+    transform-origin: -11vw 7vh;
+    box-shadow: 40vmin 0 5.059305767535822vmin currentColor;
+}
+.background span:nth-child(6) {
+    color: #FFACAC;
+    top: 79%;
+    left: 22%;
+    animation-duration: 30s;
+    animation-delay: -1s;
+    transform-origin: 23vw -20vh;
+    box-shadow: -40vmin 0 5.788969896466922vmin currentColor;
+}
+.background span:nth-child(7) {
+    color: #E45A84;
+    top: 45%;
+    left: 80%;
+    animation-duration: 6s;
+    animation-delay: -30s;
+    transform-origin: 20vw 21vh;
+    box-shadow: -40vmin 0 5.987641211626143vmin currentColor;
+}
+.background span:nth-child(8) {
+    color: #E45A84;
+    top: 56%;
+    left: 43%;
+    animation-duration: 38s;
+    animation-delay: -46s;
+    transform-origin: -6vw 21vh;
+    box-shadow: -40vmin 0 5.22740406435648vmin currentColor;
+}
+.background span:nth-child(9) {
+    color: #FFACAC;
+    top: 30%;
+    left: 67%;
+    animation-duration: 37s;
+    animation-delay: -2s;
+    transform-origin: 21vw 13vh;
+    box-shadow: -40vmin 0 5.855210251060119vmin currentColor;
+}
+.background span:nth-child(10) {
+    color: #FFACAC;
+    top: 91%;
+    left: 91%;
+    animation-duration: 11s;
+    animation-delay: -26s;
+    transform-origin: 0vw 3vh;
+    box-shadow: 40vmin 0 5.240228867575484vmin currentColor;
+}
+.background span:nth-child(11) {
+    color: #FFACAC;
+    top: 45%;
+    left: 88%;
+    animation-duration: 30s;
+    animation-delay: -41s;
+    transform-origin: 2vw -20vh;
+    box-shadow: -40vmin 0 5.489563690269864vmin currentColor;
+}
+.background span:nth-child(12) {
+    color: #FFACAC;
+    top: 86%;
+    left: 97%;
+    animation-duration: 32s;
+    animation-delay: -27s;
+    transform-origin: -20vw -18vh;
+    box-shadow: -40vmin 0 5.012142206090858vmin currentColor;
+}
+.background span:nth-child(13) {
+    color: #E45A84;
+    top: 63%;
+    left: 19%;
+    animation-duration: 30s;
+    animation-delay: -25s;
+    transform-origin: 16vw -12vh;
+    box-shadow: -40vmin 0 5.054413079176622vmin currentColor;
+}
+.background span:nth-child(14) {
+    color: #583C87;
+    top: 39%;
+    left: 30%;
+    animation-duration: 33s;
+    animation-delay: -10s;
+    transform-origin: 5vw 16vh;
+    box-shadow: 40vmin 0 5.237976240077132vmin currentColor;
+}
+.background span:nth-child(15) {
+    color: #FFACAC;
+    top: 74%;
+    left: 49%;
+    animation-duration: 38s;
+    animation-delay: -38s;
+    transform-origin: 7vw -6vh;
+    box-shadow: 40vmin 0 5.608453314947276vmin currentColor;
+}
+.background span:nth-child(16) {
+    color: #583C87;
+    top: 33%;
+    left: 95%;
+    animation-duration: 15s;
+    animation-delay: -14s;
+    transform-origin: -9vw -8vh;
+    box-shadow: 40vmin 0 5.711507880131702vmin currentColor;
+}
+.background span:nth-child(17) {
+    color: #FFACAC;
+    top: 10%;
+    left: 23%;
+    animation-duration: 22s;
+    animation-delay: -19s;
+    transform-origin: 3vw -18vh;
+    box-shadow: -40vmin 0 5.507847449069473vmin currentColor;
+}
+.background span:nth-child(18) {
+    color: #583C87;
+    top: 27%;
+    left: 14%;
+    animation-duration: 30s;
+    animation-delay: -49s;
+    transform-origin: 1vw 10vh;
+    box-shadow: -40vmin 0 5.0877139834632485vmin currentColor;
+}
+.background span:nth-child(19) {
+    color: #E45A84;
+    top: 84%;
+    left: 35%;
+    animation-duration: 6s;
+    animation-delay: -15s;
+    transform-origin: 7vw -20vh;
+    box-shadow: -40vmin 0 5.498633478506312vmin currentColor;
+}
+
+.form-box{
+    width: 90%;
+    max-width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 80px 70px;
+    text-align: center;
+    border-radius: 41% 59% 28% 72% / 43% 47% 53% 57%;
+    box-shadow: 0 10px 10px 10px rgba(255, 255, 255, 0.5);
+}
+.form-box h1{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #173D79;
+    position: relative;
+    transition: .5s;
+    overflow: hidden;
+
+}
+.form-box h1::after{
+    content: "";
+    width: 30px;
+    height: 3px;
+    border-radius: 3px;
+    background: #173D79;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.input-fieldNom{
+    position: relative;
+    width:100%;
+}
+.input-fieldNom input{
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #999;
+    font-size: 1.1rem;
+}
+.input-fieldNom label{
+    color: #444;
+    font-size: 1.1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    pointer-events: none;
+    user-select: none;
+    color:#666;
+}
+.input-fieldNom label span{
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+    transition: 0.25s cubic-bezier(0.5,1,0.5,1.5);
+}
+.input-fieldNom input:focus ~ label span,
+.input-fieldNom input:valid ~ label span{
+    color: #173D79;
+    text-shadow: 0 0 5px #173D79, 0 0 15px #173D79, 0 0 30px #173D79;
+    transform: translateY(-25px);
+}
+.input-fieldNom input:focus,
+.input-fieldNom input:valid{
+    border-bottom: 2px solid #173D79;
+}
+.input-fieldEmail{
+    position: relative;
+    width: 100%;
+}
+.input-fieldEmail input{
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #999;
+    font-size: 1.1rem;
+}
+.input-fieldEmail label{
+    color: #444;
+    font-size: 1.1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    pointer-events: none;
+    user-select: none;
+    color:#666;
+}
+.input-fieldEmail label span{
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+    transition: 0.25s cubic-bezier(0.5,1,0.5,1.5);
+}
+.input-fieldEmail input:focus ~ label span,
+.input-fieldEmail input:valid ~ label span{
+    color: #173D79;
+    text-shadow: 0 0 5px #173D79, 0 0 15px #173D79, 0 0 30px #173D79;
+    transform: translateY(-30px);
+}
+.input-fieldEmail input:focus,
+.input-fieldEmail input:valid{
+    border-bottom: 2px solid #173D79;
+}
+.input-fieldMdp{
+    position: relative;
+    width: 100%;
+}
+.input-fieldMdp input{
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #999;
+    font-size: 1.1rem;
+}
+.input-fieldMdp label{
+    color: #444;
+    font-size: 1.1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    pointer-events: none;
+    user-select: none;
+    color:#666;
+}
+.input-fieldMdp label span{
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+    transition: 0.25s cubic-bezier(0.5,1,0.5,1.5);
+}
+.input-fieldMdp input:focus ~ label span,
+.input-fieldMdp input:valid ~ label span{
+    color: #173D79;
+    text-shadow: 0 0 5px #173D79, 0 0 15px #173D79, 0 0 30px #173D79;
+    transform: translateY(-30px);
+}
+.input-fieldMdp input:focus,
+.input-fieldMdp input:valid{
+    border-bottom: 2px solid #173D79;
+}
+.input-fieldEmailConnexion{
+    position: relative;
+    width: 300px;
+}
+.input-fieldEmailConnexion input{
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #999;
+    font-size: 1.1rem;
+}
+.input-fieldEmailConnexion label{
+    color: #444;
+    font-size: 1.1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    pointer-events: none;
+    user-select: none;
+    color:#666;
+}
+.input-fieldEmailConnexion label span{
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+    transition: 0.25s cubic-bezier(0.5,1,0.5,1.5);
+}
+.input-fieldEmailConnexion input:focus ~ label span,
+.input-fieldEmailConnexion input:valid ~ label span{
+    color: #173D79;
+    text-shadow: 0 0 5px #173D79, 0 0 15px #173D79, 0 0 30px #173D79;
+    transform: translateY(-30px);
+}
+.input-fieldEmailConnexion input:focus,
+.input-fieldEmailConnexion input:valid{
+    border-bottom: 2px solid #173D79;
+}
+.input-fieldMdpConnexion{
+    position: relative;
+    width: 300px;
+}
+.input-fieldMdpConnexion input{
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #999;
+    font-size: 1.1rem;
+}
+.input-fieldMdpConnexion label{
+    color: #444;
+    font-size: 1.1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    pointer-events: none;
+    user-select: none;
+    color:#666;
+}
+.input-fieldMdpConnexion i{
+    position: absolute;
+    top:20px;
+    right: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.input-fieldMdpConnexion label span{
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+    transition: 0.25s cubic-bezier(0.5,1,0.5,1.5);
+}
+.input-fieldMdpConnexion input:focus ~ label span,
+.input-fieldMdpConnexion input:valid ~ label span{
+    color: #173D79;
+    text-shadow: 0 0 5px #173D79, 0 0 15px #173D79, 0 0 30px #173D79;
+    transform: translateY(-30px);
+}
+.input-fieldMdpConnexion input:focus,
+.input-fieldMdpConnexion input:valid{
+    border-bottom: 2px solid #173D79;
+}
+
+.btn-field{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.btn-field button{
+    flex-basis: 28%;
+    background: #173D79;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 5px 0;
+    font-size: 1.2rem;
+    transition: background 1s;
+    padding: 10px;
+}
+#signupBtn{
+    position: absolute;
+    top: 80%;
+    left: 30%;
+    border-radius: 33% 67% 61% 39% / 45% 62% 38% 55%;
+    height: 15vh;
+}
+#signinBtn{
+    position: absolute;
+    top: 80%;
+    right: 20%;
+    border-radius: 25% 75% 27% 73% / 44% 47% 53% 56%;
+    height: 15vh;
+}
+.input-group{
+    height: 280px;
+    transition: all 1s;
+}
+.input-groupConnexion{
+    height: 200px;
+    transition: all 1s;
+}
+.input-groupConnexion .input-fieldEmailConnexion,
+.input-groupConnexion .input-fieldMdpConnexion{
+    margin-top: 35px;
+    width: 100%;
+    border-radius: 20px;
+}
+.btn-field button.disable{
+    background: #eaeaea;
+    color: #555;
+}
+.inputFile{
+    display: flex; 
+    align-items: center;
+}
+.inputFile label{
+    color: #666;
+    font-size: 1.1rem;
+}
+.inputFile label i{
+    font-size: 1.2rem;
+}
+#fileInput{
+    display: none;
+}
+.btnLogin{
+    font-size: 1.2rem;
+    color: white;
+    background-color: #173D79;
+    border-radius: 20px;
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+.btnLogin:hover{
+    background-color: #00ccff;
+    color: black;
+}
+.formConnexion{
+    display: none;
+    transition: all 1s;
+}
+.formInscription{
+    transition: all 1s;
+}
+#eyeBarre{
+    display: none;
+}
+@media(max-width:1000px){
+    #signupBtn{
+        position: absolute;
+        top: 80%;
+        left: 20%;
+        border-radius: 33% 67% 61% 39% / 45% 62% 38% 55%;
+        height: 15vh;
+    }
+    #signinBtn{
+        position: absolute;
+        top: 80%;
+        right: 10%;
+        border-radius: 25% 75% 27% 73% / 44% 47% 53% 56%;
+        height: 15vh;
+    }
+}
+@media(max-width:780px){
+    #signinBtn{
+        position: absolute;
+        top: 80%;
+        right: 5px;
+        border-radius: 25% 75% 27% 73% / 44% 47% 53% 56%;
+        height: 15vh;
+    }
+}
+@media(max-width:600px){
+    .form-box{
+        width: 90%;
+        max-width: 500px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 65px 50px;
+        text-align: center;
+        border-radius: 41% 59% 28% 72% / 43% 47% 53% 57%;
+        box-shadow: 0 10px 10px 10px rgba(255, 255, 255, 0.5);
+        height: 570px;
+    }
+    .input-fieldNom input, .input-fieldEmail input, .input-fieldMdp input, 
+    .input-fieldEmailConnexion input, .input-fieldMdpConnexion input{
+        font-size: 1rem;
+        width: 100%;
+        margin-top: 10px;
+        padding: 6px 0;
+
+    }
+    .input-fieldNom label span, .input-fieldEmail label span, .input-fieldMdp label span,
+    .input-fieldEmailConnexion label span, .input-fieldMdpConnexion label span{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .inputFile label{
+        font-size: 1rem;
+    }
+    .form-box h1{
+        font-size: 2rem;
+        margin-bottom: 10px;
+       
+    }
+    #signupBtn{
+        position: absolute;
+        top: 85%;
+        left: 10%;
+        border-radius: 33% 67% 61% 39% / 45% 62% 38% 55%;
+        height: 10vh;
+    }
+    #signinBtn{
+        position: absolute;
+        top: 90%;
+        right: 5px;
+        border-radius: 25% 75% 27% 73% / 44% 47% 53% 56%;
+        height: 10vh;
+    }
+}
+/* fin connexion */

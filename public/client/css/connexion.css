@@ -1,0 +1,110 @@
+.btn-connexion{
+    width: 15rem;
+    height: 4rem;
+    background: #173d79;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    justify-content: space-around;
+    align-items: center;
+    top: 10px;
+    right: 10Px;
+    border-radius: 50PX;
+    transition: .7s;
+    z-index: 100;
+}
+
+.panier-icon i {
+    font-size: 40px;
+    color: white;
+}
+
+.btn-connexion img {
+    height: 40px;
+    width: 40Px;
+    margin-left: 20px;
+    border-radius: 50%;
+    background: white;
+}
+
+.btn-connexion .search {
+    display: flex;
+}
+
+.btn-connexion .search input {
+    height: 30px;
+    width: 3rem;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #6dc0a4;
+    outline: none;
+    transition: .7s;
+    
+}
+
+
+.btn-connexion .search button {
+    height: 30px;
+    width: auto;
+    background: none;
+    outline: none;
+    border: none;
+   
+}
+
+.mitombo{
+    width: 10rem !important;
+}
+
+.misaka {
+    width: 20rem;
+}
+
+.btn-connexion .search button i {
+    font-weight: bold;
+    color: #6dc0a4;
+    font-size: 30Px;
+}
+
+.deconexion {
+    display: none;
+}
+
+#icon-connexion{
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.Tconcter{
+    height: 50px;
+    padding-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+.Tconcter:hover{
+    height: 200px;
+}
+.Tconcter .icon{
+    padding-top: 20px;
+}
+.soratra a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.ampita .soratra{
+    color: #fff;
+    font-weight: 600;
+}
+.clsme{
+    display: flex;
+    padding-bottom: 40px;
+}
+.clsme .soratra{
+    font-size: 1.3rem;
+    margin:0 5px 0 20px;
+}

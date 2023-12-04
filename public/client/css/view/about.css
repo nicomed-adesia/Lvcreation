@@ -1,0 +1,64 @@
+.about{
+    height: 100%;
+    width: 100%;
+    background: var(--dark);
+    position: relative;
+  }
+  .about-section{
+    display: flex;
+    height: 100%;
+  }
+  .about_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    /* border: 1px solid white; */
+  }
+  .about_image img{
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    height: 25rem;
+    width: 25rem;
+    object-fit: cover;
+  }
+  .about_description{
+    height: 100%;
+   padding: 8rem 1rem 0 1rem;
+   position: relative;
+   z-index: 1;
+  }
+  .about-shape{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .about-shape2{
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .animated-shape-about{
+    position: absolute;
+  opacity: .6;
+  
+  animation: aboutShape 6s linear infinite;
+  }
+  @keyframes aboutShape {
+    0%{
+      transform: rotate(0);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+  .about-un{
+    right: 25%;
+  bottom: 10%;
+  }
+  .about-deux{
+    top: 10%;
+  right: 50%;
+  animation-delay: .3s;
+  }

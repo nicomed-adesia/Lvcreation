@@ -1,0 +1,194 @@
+:root{
+    --dark: #222224;
+    --blue:#173d79;
+    --orange:#f8ad33;
+    --ciel:#6dc0a4;
+    --white:#fff;
+    --box-shadow:0 0 .6rem rgba(0, 0, 0, .2)
+}
+
+body{
+    position: relative;
+}
+
+.content-card{
+    height: 100vh;
+    width: 100%;
+    background:var(--dark);
+    overflow: hidden;
+    position: relative;
+}
+
+.content-card .container{
+    height: 100%;
+    width: 100%;
+    padding: 2% 0;
+}
+
+.content-carte{
+    /* border: 2px solid green; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.content-card .global-content-cartes form {
+    height: 100%;
+    width: 100%;
+}
+
+.content-card .global-content-cartes form .container-inputs-payement{
+    /* border: 2px solid white; */
+    height: 80%;
+}
+
+.container-inputs-payement .content-input-payement{
+    display: flex;
+    height: 20%;
+}
+
+.content-input-payement .input-payement{
+    color: var(--white);
+    /* background: green; */
+    /* border: 2px solid black; */
+}
+
+.input-payement input{
+    width: 80%;
+    height: 2rem;
+    margin-top: 10px;
+    margin-left: 10Px;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--ciel);
+}
+
+.input-payement label{
+    margin-left: 10px;
+    font-size: 20Px;
+}
+
+.payment-submit{
+    height: 15%;
+    /* border: 2px solid salmon; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid white; */
+    /* margin: 2% 0; */
+}
+
+.payment-submit input{
+    padding: 4% 4%;
+    border: none;
+    background: linear-gradient(#173d79,#6dc0a4);
+    border-radius: 70% 30% 76% 24%/ 41% 38% 62% 59%;
+    animation: rond 3s linear infinite;
+    font-size: 25Px;
+    font-weight: bold;
+    color: var(--white);
+}
+
+@keyframes rond {
+    0%{
+    border-radius: 70% 30% 76% 24%/ 41% 38% 62% 59%;
+
+    }
+    50%{
+        border-radius: 53% 47% 59% 41%/ 49% 52% 48% 51%;
+    
+    }
+    100%{
+        border-radius: 70% 30% 76% 24%/ 41% 38% 62% 59%;
+    
+    }
+   
+}
+
+/* Resume */
+.resume{
+    height: 95%;
+    border: 1px solid rgb(216, 216, 216);
+    width: 100%;
+    color: white;
+    padding:0 2%;
+}
+
+.title-resume{
+    font-size: 25px;
+    text-align: center;
+}
+
+.resume .content-details{
+    height: 100%;
+    width: 100%;
+}
+
+.resume .content-details .detail{
+    border-bottom: 1px solid var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    height: 10%;
+}
+
+.resume .content-details .detail h1{
+    font-size: 16px;
+}
+
+.resume .content-details .detail p{
+    font-size: 15px;
+}
+
+.resume .content-details .px-unity{
+}
+
+.resume .content-details .px-unity h1{
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.px-unity-content{
+    width: 100%;
+    height: 20%;
+    border-bottom: 1px solid var(--white);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px ;
+
+}
+.image-produit{
+    padding: 4%;
+    /* border: 2px solid blue; */
+    height: 40%;
+}
+
+.image-produit img{
+    height: 100%;
+    width: 100%;
+}
+
+
+/* responsive  */
+@media (max-width:800px) {
+    .content-carte{
+       display: block !important;
+    }
+
+    .content-input-payement{
+        display: block !important;   
+    }
+    .content-card{
+        height: auto !important;
+    }
+    .image-produit{
+        height: 10% !important;
+    
+    }
+    .image-produit img{
+        height: 200px !important;
+        width: 100%;
+    }
+}
